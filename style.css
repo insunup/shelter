@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    /* Стили для хедера */
+}
+
+#main {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#start-screen, #about, #path, #help, #donation, #footer {
+    width: 100%;
+}
+
+/* Задаем высоту для каждого блока */
+#start-screen {
+    height: 908px;
+    background-color: #f0f0f0; /* Замените на нужный цвет или фон */
+}
+
+#about {
+    height: 588px;
+    background-color: #e0e0e0; /* Замените на нужный цвет или фон */
+}
+
+#path {
+    height: 877px;
+    background-color: #d0d0d0; /* Замените на нужный цвет или фон */
+}
+
+#help {
+    height: 611px;
+    background-color: #c0c0c0; /* Замените на нужный цвет или фон */
+}
+
+#donation {
+    height: 462px;
+    background-color: #b0b0b0; /* Замените на нужный цвет или фон */
+}
+
+#footer {
+    height: 350px;
+    background-color: #a0a0a0; /* Замените на нужный цвет или фон */
+}
+
+/* Адаптивные стили для экранов шириной менее 1280 пикселей */
+@media (max-width: 1279px) {
+    #main {
+        padding: 0 10px;
+    }
+
+    #start-screen, #about, #path, #help, #donation, #footer {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
