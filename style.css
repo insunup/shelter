@@ -1,15 +1,139 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* noto-sans-georgian-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Sans Georgian';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/noto-sans-georgian-v44-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* noto-sans-georgian-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Sans Georgian';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/noto-sans-georgian-v44-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* noto-sans-georgian-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Sans Georgian';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/noto-sans-georgian-v44-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  html {
     box-sizing: border-box;
-}
+  }
+
+  *, *::before, ::after {
+    box-sizing: inherit;
+  }
+
+  .wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .header_logo {
+    width: 184px;
+    height: 60px;
+  }
 
 header {
     /* Стили для хедера */
 }
 
-#main {
+.start-screen {
+    max-width: 1200px;
+    max-height: 728px;
+  margin: 0 auto;
+  padding-top: 4.64%;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      display: -webkit-box;
+  display: -ms-flexbox;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #292929;
+}
+
+.start-screen-content {
+  width: 38.3%;
+  margin-right: 3.5%;
+  margin-top: 13.66%;
+}
+
+.heading {
+  width: 310px;
+  margin: 0;
+  margin-bottom: 42px;
+  font-size: 44px;
+  line-height: 57px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+
+.subheading {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #F6F6F6;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+.button-primary-start-screen {
+  padding-top: 2px;
+  padding-left: 2px;
+  border-radius: 26px;
+  border: none;
+  font-family: "Georgia", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  color: #292929;
+  height: 52px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+  justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+  align-items: center;
+}
+
+.button-primary-start-screen {
+    background-color: #FDDCC4;
+}
+
+.button-primary-start-screen:active, .button-primary-start-screen:focus {
+  background-color: #FDDCC4;
+  opacity: 0.7;
+}
+
+.start-screen-puppy-pic {
+    width: 58.16%;
+}
+
+#main 
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -27,27 +151,391 @@ header {
 
 #about {
     height: 588px;
-    background-color: #e0e0e0; /* Замените на нужный цвет или фон */
+    background-color: #e0e0e0;
+    max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 4.24%;
+  padding-left: 9.2%;
+  padding-bottom: 88px;
 }
 
-#path {
+.pets {
     height: 877px;
-    background-color: #d0d0d0; /* Замените на нужный цвет или фон */
+    background-color: #F6F6F6; /* Замените на нужный цвет или фон */
+    position: relative;
 }
 
-#help {
+.pets-heading {
+    max-width: 1200px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 82.5% auto;
+      grid-template-columns: auto 82.5% auto;
+    -ms-grid-rows: auto 54.8% auto;
+      grid-template-rows: auto 54.8% auto;
+    padding-top: 6.7%;
+    margin: 0 auto;
+}
+
+.pets-text {
+  font-family: "Georgia", "Arial", sans-serif;
+  font-size: 35px;
+  font-weight: normal;
+  line-height: 45px;
+  padding-left: 2px;
+  padding-top: 1px;
+  letter-spacing: 0.06em;
+  margin: 0;
+  margin-bottom: 5.9%;
+  text-align: center;
+  -ms-grid-column: 2;
+    grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.pets-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  overflow: hidden;
+}
+
+.slider-button {
+  font-family: "Georgia", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 19px;
+    -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 52px;
+  height: 52px;
+  padding-right: 2px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2px;
+  padding-left: 2px;
+  border-radius: 26px;
+  border: none;
+  letter-spacing: 1px;
+  color: #292929;
+  height: 52px;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #F1CDB3;
+  position: relative;
+  background-color: transparent;
+}
+
+.slider-button:hover {
+  background-color: #FDDCC4;
+  border: none;
+}
+
+.slider-button:active, .slider-button:focus {
+  background-color: #FDDCC4;
+  opacity: 0.7;
+  border: none;
+}
+
+.slider-button:disabled, .slider-button[disabled] {
+  border: 2px solid #CDCDCD;
+}
+
+.slider-button:disabled path:hover::after path,
+.slider-button:disabled path:active::after path,
+.slider-button:disabled path:focus::after path {
+  fill: #CDCDCD;
+}
+
+.slider-button:disabled:hover, 
+.slider-button:disabled:active, 
+.slider-button:disabled:focus, 
+.slider-button[disabled]:hover, 
+.slider-button[disabled]:active, .slider-button[disabled]:focus {
+    background-color: transparent;
+    cursor: auto;
+}
+
+.slider-button:disabled path {
+    fill: #CDCDCD;
+}
+  
+.slider-button-previous {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+
+  .slider-button-previous:hover::after, 
+  .slider-button-previous:active::after, 
+  .slider-button-previous:focus::after {
+    top: 12px;
+  }
+
+  .slider-button-next {
+    -ms-grid-column-align: end;
+        justify-self: end;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  
+  .slider-button-next:hover::after, 
+  .slider-button-next:active::after, 
+  .slider-button-next:focus::after {
+    top: 32px;
+  }
+  
+  .button-primary {
+  font-family: "Georgia", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  color: #292929;
+  height: 52px;
+  outline: none;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 261px;
+    -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2px;
+  padding-left: 2px;
+  border-radius: 26px;
+  border: none;
+  background-color: #F1CDB3;
+  margin-top: 59px;
+  margin-bottom: 101px;
+}
+
+.button-primary:hover {
+  background-color: #FDDCC4;
+}
+
+.button-primary:active, .button-primary:focus {
+  background-color: #FDDCC4;
+  opacity: 0.7;
+}
+  
+.pets-arrow {
+    margin-top: -2px;
+}
+
+.help {
     height: 611px;
     background-color: #c0c0c0; /* Замените на нужный цвет или фон */
+    padding-top: 82px;
+    padding-left: 3px;
+    padding-bottom: 45px;    
 }
 
-#donation {
-    height: 462px;
-    background-color: #b0b0b0; /* Замените на нужный цвет или фон */
+.help-heading {
+    font-family: "Georgia", "Arial", sans-serif;
+  font-size: 35px;
+  font-weight: normal;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  margin-bottom: 58px;
+  text-align: center;
 }
+
+.list {
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.help-item {
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-bottom: 55px;
+}
+
+.help-item-shelter {
+    font-family: "Georgia", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;   
+}
+
+.icon-help-pic {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.donation {
+    height: 462px;
+    background-color: #F6F6F6; /* Замените на нужный цвет или фон */
+}
+  
+  .donation-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 4.25%;
+    padding-left: 7.52%;
+    padding-bottom: 5.25%;
+  }
+
+  .donation-heading {
+    font-family: "Georgia", "Arial", sans-serif;
+  font-size: 35px;
+  font-weight: normal;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  margin-bottom: 4.8%;
+  width: 100%;
+  }
+
+  .donation-subheading {
+  font-family: "Georgia", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #FFFFFF;
+  color: #545454;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  margin-bottom: 4.7%;
+}
+
+.credit-card {
+    position: relative;
+  background-color: #F1CDB3;
+  color: #545454;
+  width: 349px;
+  height: 43px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 9px;
+  border: none;
+  font-family: "Georgia", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  outline: none;
+  padding-left: 46px;
+  letter-spacing: 0.06em;
+  margin-bottom: 20px;
+}
+
+.credit-card:hover {
+    background-color: #FDDCC4;
+  }
+
+  .credit-card::before {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 32px;
+    left: 15px;
+    top: 10px;
+  }
+  
+  .donation-text {
+    width: 380px;
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    font-style: italic;
+    color: #B2B2B2;
+  }
+  
+  .donation-dog-pic {
+    margin-right: 30px;
+  }
 
 #footer {
     height: 350px;
-    background-color: #a0a0a0; /* Замените на нужный цвет или фон */
+    background-color: #a0a0a0; /* Заменить на нужный цвет или фон */
+    .footer {
+        background: url(../../assets/images/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+      }
+      
+      .footer__wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding-top: 3.4%;
+      
 }
 
 /* Адаптивные стили для экранов шириной менее 1280 пикселей */
@@ -60,4 +548,5 @@ header {
         padding: 10px;
         box-sizing: border-box;
     }
+}
 }
